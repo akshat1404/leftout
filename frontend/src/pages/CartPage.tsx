@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Navigation } from '../components/Navigation';
 import { CartItemComponent } from '../components/CartItemComponent';

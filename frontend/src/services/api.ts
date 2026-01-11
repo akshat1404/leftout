@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
-import { Cart, User, AuthResponse, Product } from '../types';
+import { Cart, AuthResponse, Product } from '../types';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3000';
 
 class ApiService {
   private api: AxiosInstance;
