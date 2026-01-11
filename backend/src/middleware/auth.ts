@@ -6,6 +6,9 @@ export interface AuthRequest extends Request {
     userId: string;
     email: string;
   };
+  headers: Request['headers'];
+  body: any;
+  params: any;
 }
 
 export const authMiddleware = (
