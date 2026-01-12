@@ -14,7 +14,13 @@ This service monitors shopping carts and automatically sends email reminders aft
 
 ---
 
-## 🏗️ Architecture
+## � Live Demo
+
+**Check out the live demo:** https://eloquent-bonbon-9fe0da.netlify.app/
+
+---
+
+## �🏗️ Architecture
 
 ```
 ┌─────────────────────────────────────────┐
