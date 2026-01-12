@@ -5,12 +5,12 @@ import mongoose from 'mongoose';
 export const connectDB = async (): Promise<void> => {
   try {
     const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/abandoned-cart';
-
+    console.log('Connecting to MongoDB at', mongoUri);
     await mongoose.connect(mongoUri);
 
     console.log('✅ MongoDB Connected Successfully');
   } catch (error) {
-    console.warn('⚠️ MongoDB Connection Failed (continuing in demo mode):', (error as any).message);
+    console.warn('⚠️ MongoDB Connecticdon Failed (continuing in demo mode):', (error as any).message);
     console.log('💡 To enable full functionality, set MONGODB_URI environment variable');
     // Don't exit - allow app to run in demo mode
   }

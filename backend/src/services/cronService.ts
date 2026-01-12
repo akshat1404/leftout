@@ -4,7 +4,7 @@ import { User } from '../models/User';
 import { Notification } from '../models/Notification';
 import { emailService } from './emailService';
 
-const ABANDON_TIME_SECONDS = parseInt(process.env.CART_ABANDON_TIME_SECONDS || '5');
+const ABANDON_TIME_SECONDS = parseInt(process.env.CART_ABANDON_TIME_SECONDS || '300');
 
 export const initializeAbandonedCartCron = (): void => {
   // Run every minute
